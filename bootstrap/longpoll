@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/djangosu/.virtualenvs/botsEnv3/bin/python /home/djangosu/antigovoroon/longpoll.py

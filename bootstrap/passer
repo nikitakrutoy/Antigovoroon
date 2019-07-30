@@ -1,0 +1,2 @@
+#!/bin/sh
+/home/djangosu/.virtualenvs/botsEnv3/bin/gunicorn app:passer -b 127.0.0.1:8001 -w 1

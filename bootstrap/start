@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# localhost:8001
+/home/djangosu/.virtualenvs/botsEnv3/bin/gunicorn app:app \
+    -b 127.0.0.1:8001  \
+    -w 3 \
+    --access-logfile /tmp/log/gunicorn/access_log
+    -t 100 \
+    --graceful-timeout 100 \
+
+# Unix socket
+# /home/djangosu/.virtualenvs/botsEnv3/bin/gunicorn \
+#     app:app \
+#     -b unix:sock.sock \
+#     -w 1
